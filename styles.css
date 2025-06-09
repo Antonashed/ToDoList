@@ -1,0 +1,85 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 60px;
+  background: #d3bce3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+.sidebar.expanded {
+  width: 200px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.menu-item {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #444;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.menu-item:hover {
+  background: #c4aee0;
+  transform: scale(1.1);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #6b6fc6;
+  color: white;
+  padding: 10px 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pf-icon {
+  font-size: 1.5em;
+}
+
+.content {
+  padding: 20px;
+  overflow-y: auto;
+}
